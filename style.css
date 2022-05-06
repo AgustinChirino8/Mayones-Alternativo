@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Imagenes{
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+    padding-top:150px;
+}
+
+.Parrafo{
+    padding-top: 80px;
+}
+
