@@ -1,0 +1,25 @@
+{
+  "name": "master",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000M\u0000a\u0000y\u0000o\u0000n\u0000e\u0000s\u0000-\u0000A\u0000l\u0000t\u0000e\u0000r\u0000n\u0000a\u0000t\u0000i\u0000v\u0000o\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css":"node-sass --include-path scss SASS/diseño.scss estilo.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgustinChirino8/Mayones-Alternativo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AgustinChirino8/Mayones-Alternativo/issues"
+  },
+  "homepage": "https://github.com/AgustinChirino8/Mayones-Alternativo#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

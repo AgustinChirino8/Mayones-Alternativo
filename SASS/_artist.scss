@@ -1,0 +1,187 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.counter{
+    .Titulo__Pagina{
+        font-family: 'Cinzel', serif;
+        font-family: 'Playfair Display', serif;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Source Code Pro', monospace;
+        text-align: center;
+        color:rgba(255, 0, 0, 0.77);
+        font-size: 50px;
+        
+    }
+    .Titulo__Redes{
+        text-align: right;
+        padding: 16px;
+        display: flex;
+        justify-content: right;
+        flex-direction: row;
+        gap: 2rem;
+        list-style: none;
+    }
+    .Titulo__Logo{
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+    }
+    .Menu{
+        text-align: right;
+        padding: 0px;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 30px;
+        color:rgba(226, 4, 4, 0.77); 
+        padding-bottom: 2rem;
+    }
+    .MenuSpects{
+        display: flex;
+        justify-content: right;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px;
+        gap: 3rem;
+        list-style: none;
+        text-decoration: none;    
+    }
+    .MenuPrincipal{
+        text-align: center;
+        padding:0%;
+        font-family: 'Source Code Pro', monospace;
+        font-size:35px;
+        color:rgba(226, 4, 4, 0.77);
+        text-decoration: none;
+    }
+    .MenuProducts{
+        text-align: center;
+        padding:0%;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 35px;
+        color:rgba(226, 4, 4, 0.77);
+        text-decoration: none;
+    }
+    .MenuArtists{
+        text-align: center;
+        padding:0%;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 35px;
+        color:rgba(226, 4, 4, 0.77);
+        text-decoration: none;
+    }
+    .MenuContact{
+        text-align: center;
+        padding:0%;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 35px;
+        color:rgba(226, 4, 4, 0.77);
+        text-decoration: none;
+    }
+}
+.Galery{
+    .Artistas1{
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 10px;
+        padding-right: 35px;
+        padding-top: 30px;
+        gap: 4rem;
+    }
+    .Artistas2{
+        display: flex;
+        justify-content:right;
+        padding: 10px;
+        padding-top: 50px;
+        padding-right: 100px;
+        gap:5rem;     
+    }
+    .Artistas3{
+        display: flex;
+        justify-content:right;
+        padding: 10px;
+        padding-top: 50px;
+        padding-right: 100px;
+        padding-bottom: 100px;
+        gap:5rem; 
+    }
+}
+.PieDePagina{
+    padding-bottom: 200px;
+    
+    .PieDePagina__Imagen{
+        text-align: center;
+        padding: 10px;
+    }
+    .PieDePagina__Subtitulo{
+        text-align: center;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 40px;
+        color: rgba(226, 4, 4, 0.77);
+        padding: 40px;
+    }
+    .PieDePagina__Parrafo{
+        font-family: 'Source Code Pro', monospace;
+        font-size: 15px;
+        text-align: center;
+        padding: 10px;
+        color:black;
+    }
+
+}
+@media screen and (max-width:1240px){
+    .counter{
+       display: grid;
+       grid-template-columns: 100%;
+       max-width: 100%;
+       margin:auto;
+   } 
+
+   .Titulo__Pagina{
+      font-size:40px;
+      font-family: 'Cinzel', serif;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      color:#ffff;
+      padding: 10px;
+   }
+   .Menu{
+      text-align: center;
+      padding: 0px;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 10px;
+      color:#BFACAA ; 
+   }
+
+   .MenuSpects{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items:left;
+      padding: 0px;
+      list-style: none;
+      text-decoration: none;    
+   }
+   .Galery{
+      display: flex;
+      flex-direction: column;
+   }
+   .Artistas1{
+      display: flex;
+      flex-direction: column;
+   }  
+   .Artistas2{
+      display: flex;
+      flex-direction: column;
+   }
+   .Artistas3{
+      display: flex;
+      flex-direction: column;
+      size: 50%;
+   }
+}
