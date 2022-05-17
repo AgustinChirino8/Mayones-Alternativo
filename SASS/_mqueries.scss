@@ -1,0 +1,118 @@
+//-----------------------------------------------------------LISTAS-------------------------------------------------------------//
+
+$ListColors:#ffff, #000000,grey,rgba(226, 4, 4, 0.77),rgb(133, 1, 1);
+$Primario:nth($ListColors, 4 );
+$Secundario:nth($ListColors,2 );
+$ColVariant:nth($ListColors,5);
+$Dark:nth($ListColors,2);
+
+//----------------------------------------------------------------MAPS---------------------------------------------//
+
+$Heading:( 
+    h1:50px,
+    h2:40px,
+    h3:35px,
+    h4:30px,
+    h5:15px,
+);
+//-------------------------------------------------------//
+
+$h1:map-get($Heading,h1);
+$h2:map-get($Heading,h2);
+$h3:map-get($Heading,h3);
+$h4:map-get($Heading,h4);
+$h5:map-get($Heading,h5);
+
+//-------------------------------------------------------//
+
+
+//-------------------------------------------------------------------MIXIN-------------------------------------------------//
+
+
+@mixin Variant {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+@mixin Galery {
+    display: flex;
+    flex-direction: column;
+}
+
+
+//------------------------------------------------------------------MEDIAQ--------------------------------------------//@at-root
+
+
+
+@media screen and (max-width:1240px){
+    .counter{
+       display: grid;
+       grid-template-columns: 100%;
+       max-width: 100%;
+       margin:auto;
+       .Titulo__Pagina{
+          font-size:40px;
+          font-family: 'Cinzel', serif;
+          font-family: 'Playfair Display', serif;
+          text-align: center;
+          color:$Primario;
+          padding: 10px;
+       }
+       .Menu{
+          text-align: left;
+          padding: 0px;
+          font-family: 'Source Code Pro', monospace;
+          font-size: 10px;
+          color:#BFACAA ;
+          .MenuSpects{
+               padding: 0px;
+               list-style: none;
+               text-decoration: none;  
+               text-align: center;  
+           } 
+       }
+       .Ficha{
+            .Tablas{
+                display: flex;
+                color:white;
+                grid-template-columns: 4px;
+                font-size: 30px;
+                padding: 1px;
+                border-style: none;
+                flex-direction: column;
+           }
+            .ElementosTablas{
+                display: flex;
+                flex-direction: column;
+                background-color: $Dark;
+           }
+            .Elemento{
+                background-color: grey;
+                display: flex;
+                flex-direction: column;
+           }
+            .Variante1{
+                @include Variant();
+           }
+            .Variante2{
+                @include Variant();
+           }
+            .Variante3{
+                @include Variant();
+           }
+       }
+       .Galery{
+            
+            .Artistas1{
+                @include Galery();
+           }   
+            .Artistas2{
+                @include Galery();
+           }
+            .Artistas3{
+                @include Galery();
+               size: 50%;
+           }
+       }
+   }    
+}

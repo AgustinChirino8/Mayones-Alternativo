@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+//-----------------------------------LISTAS.....................................//
+
+
+
+$ListColors:#ffff, #000000,grey,rgba(226, 4, 4, 0.77),rgb(133, 1, 1);
+$Primario:nth($ListColors, 4 );
+$Secundario:nth($ListColors,2 );
+$ColVariant:nth($ListColors,5);
+$Dark:nth($ListColors,2);
+
+
+//----------------------------------------------------------------MAPS---------------------------------------------//
+
+$Heading:( 
+    h1:50px,
+    h2:40px,
+    h3:35px,
+    h4:30px,
+    h5:20px,
+    h6:15px,
+);
+//-------------------------------------------------------//
+
+$h1:map-get($Heading,h1);
+$h2:map-get($Heading,h2);
+$h3:map-get($Heading,h3);
+$h4:map-get($Heading,h4);
+$h5:map-get($Heading,h5);
+$h6:map-get($Heading,h6);
+
+//-------------------------------------------------------//
+
+
+
+//---------------------------------MIXIN----------------------------------------------//
+
+@mixin FontStyle {
+    padding:3%;
+    font-family: 'Cinzel', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+    color:$ColVariant;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+}
+@mixin Variant {
+    display:grid;
+    grid-template-columns: 400px 700px;
+    gap: 30rem;
+    padding-left: 40px;
+    padding: 60px;
+    height: auto;
+}
+
+@mixin FontMenu {
+    text-align: center;
+    padding:0%;
+    font-family: 'Source Code Pro', monospace;
+    font-size:$h3;
+    color:$Primario;
+    text-decoration: none;    
+}
+
+//---------------------------------------------LISTAS---------------------------------------------------------//
+
+
+
+$ListColors:#ffff, #000000,grey,rgba(226, 4, 4, 0.77),rgb(133, 1, 1);
+$Primario:nth($ListColors, 4 );
+$Secundario:nth($ListColors,2 );
+$ColVariant:nth($ListColors,5);
+
+
+
+
+//--------------------------------------------------SELECTORES------------------------------------------------------------------------//
+.Ficha{
+    .Modelo {
+        @include FontStyle()
+    }
+    .Variante1{
+        @include Variant()
+    }
+    .Variante2{
+        @include Variant()
+    }
+    .Variante3{
+        @include Variant()
+    }
+    .Tablas{
+        display: grid;
+        color:$ColVariant;
+        font-family: 'Cinzel', serif;
+        font-family: 'Playfair Display', serif;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 30px;
+        grid-template-columns: 4px;
+        padding: 3%;
+        border-style: none;
+        justify-content: left;
+    }
+    .ElementosTablas{
+        display: grid;
+        grid-template-columns: 50rem;
+        background-color: $Secundario;
+    }
+    .Elemento{
+        background-color: rgb(183, 183, 183);
+        display: flex;
+    }
+}

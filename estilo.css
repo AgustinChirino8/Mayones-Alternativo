@@ -9,8 +9,9 @@
   font-family: 'Roboto', sans-serif;
   font-family: 'Source Code Pro', monospace;
   text-align: center;
-  color: rgba(255, 0, 0, 0.77);
-  font-size: 50px; }
+  color: rgba(226, 4, 4, 0.77);
+  font-size: 50px;
+  padding: 80px; }
 
 .counter .Titulo__Redes {
   text-align: right;
@@ -89,22 +90,14 @@
   padding-top: 30px;
   gap: 4rem; }
 
-.Galery .Artistas2 {
+.Galery .Artistas2, .Galery .Artistas3 {
   display: flex;
-  justify-content: right;
+  justify-content: space-evenly;
   padding: 10px;
   padding-top: 50px;
-  padding-right: 100px;
-  gap: 5rem; }
-
-.Galery .Artistas3 {
-  display: flex;
-  justify-content: right;
-  padding: 10px;
-  padding-top: 50px;
-  padding-right: 100px;
-  padding-bottom: 100px;
-  gap: 5rem; }
+  padding-left: 10px;
+  padding-right: 90px;
+  gap: 10rem; }
 
 .PieDePagina {
   padding-bottom: 200px; }
@@ -122,7 +115,141 @@
     font-size: 15px;
     text-align: center;
     padding: 10px;
-    color: black; }
+    color: #000000; }
+
+.Article .container {
+  border-radius: 5px;
+  background: #40211a;
+  background: linear-gradient(90deg, #511507 0%, #814639 35%, #767373 100%);
+  margin: 100px;
+  padding-top: 20px;
+  padding: 100px;
+  color: white;
+  font-family: 'Source Code Pro', monospace; }
+
+.Article .Contact {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 25px;
+  text-align: center;
+  color: grey;
+  text-decoration: none;
+  padding-top: 50px;
+  padding: 50px; }
+
+.Article .FormContact {
+  background-color: #862727;
+  width: 400px;
+  font-family: 'Source Code Pro', monospace;
+  position: relative;
+  left: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 7px 13px 37px #3d1c1c;
+  padding-bottom: -1000px;
+  scale: 0.75; }
+
+.Article .FormContact label, .Article input, .Article textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px; }
+
+.Article .FormContact label {
+  font-weight: 500; }
+
+.Article .FormContact input, .Article textarea {
+  border: none;
+  border-bottom: 2px solid #fffffe;
+  margin-bottom: 10px;
+  font-size: 20px;
+  outline: none;
+  color: gray; }
+
+.Article input[type=text], .Article select, .Article textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(247, 5, 5, 0.461);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-family: 'Source Code Pro', monospace; }
+
+.Article input[type=submit] {
+  background-color: #585857;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Source Code Pro', monospace; }
+
+.Article input[type=submit]:hover {
+  background-color: grey; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.Ficha .Modelo {
+  padding: 3%;
+  font-family: 'Cinzel', serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;
+  color: #850101;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none; }
+
+.Ficha .Variante1 {
+  display: grid;
+  grid-template-columns: 400px 700px;
+  gap: 30rem;
+  padding-left: 40px;
+  padding: 60px;
+  height: auto; }
+
+.Ficha .Variante2 {
+  display: grid;
+  grid-template-columns: 400px 700px;
+  gap: 30rem;
+  padding-left: 40px;
+  padding: 60px;
+  height: auto; }
+
+.Ficha .Variante3 {
+  display: grid;
+  grid-template-columns: 400px 700px;
+  gap: 30rem;
+  padding-left: 40px;
+  padding: 60px;
+  height: auto; }
+
+.Ficha .Tablas {
+  display: grid;
+  color: #850101;
+  font-family: 'Cinzel', serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 30px;
+  grid-template-columns: 4px;
+  padding: 3%;
+  border-style: none;
+  justify-content: left; }
+
+.Ficha .ElementosTablas {
+  display: grid;
+  grid-template-columns: 50rem;
+  background-color: #000000; }
+
+.Ficha .Elemento {
+  background-color: #b7b7b7;
+  display: flex; }
 
 @media screen and (max-width: 1240px) {
   .counter {
@@ -130,37 +257,59 @@
     grid-template-columns: 100%;
     max-width: 100%;
     margin: auto; }
-  .Titulo__Pagina {
-    font-size: 40px;
-    font-family: 'Cinzel', serif;
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-    color: #ffff;
-    padding: 10px; }
-  .Menu {
-    text-align: center;
-    padding: 0px;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 10px;
-    color: #BFACAA; }
-  .MenuSpects {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: left;
-    padding: 0px;
-    list-style: none;
-    text-decoration: none; }
-  .Galery {
-    display: flex;
-    flex-direction: column; }
-  .Artistas1 {
-    display: flex;
-    flex-direction: column; }
-  .Artistas2 {
-    display: flex;
-    flex-direction: column; }
-  .Artistas3 {
-    display: flex;
-    flex-direction: column;
-    size: 50%; } }
+    .counter .Titulo__Pagina {
+      font-size: 40px;
+      font-family: 'Cinzel', serif;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      color: rgba(226, 4, 4, 0.77);
+      padding: 10px; }
+    .counter .Menu {
+      text-align: left;
+      padding: 0px;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 10px;
+      color: #BFACAA; }
+      .counter .Menu .MenuSpects {
+        padding: 0px;
+        list-style: none;
+        text-decoration: none;
+        text-align: center; }
+    .counter .Ficha .Tablas {
+      display: flex;
+      color: white;
+      grid-template-columns: 4px;
+      font-size: 30px;
+      padding: 1px;
+      border-style: none;
+      flex-direction: column; }
+    .counter .Ficha .ElementosTablas {
+      display: flex;
+      flex-direction: column;
+      background-color: #000000; }
+    .counter .Ficha .Elemento {
+      background-color: grey;
+      display: flex;
+      flex-direction: column; }
+    .counter .Ficha .Variante1 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px; }
+    .counter .Ficha .Variante2 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px; }
+    .counter .Ficha .Variante3 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px; }
+    .counter .Galery .Artistas1 {
+      display: flex;
+      flex-direction: column; }
+    .counter .Galery .Artistas2, .counter .Galery .Artistas3 {
+      display: flex;
+      flex-direction: column; }
+    .counter .Galery .Artistas3 {
+      display: flex;
+      flex-direction: column;
+      size: 50%; } }
