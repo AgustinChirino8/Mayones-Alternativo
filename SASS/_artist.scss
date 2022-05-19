@@ -1,3 +1,5 @@
+//--------------------------------MODELO DE CAJA-----------------------------------//
+
 * {
     padding: 0;
     margin: 0;
@@ -25,7 +27,7 @@ $Heading:(
     h4:30px,
     h5:15px,
 );
-//-------------------------------------------------------//
+//--------------------valores------------------------//
 
 $h1:map-get($Heading,h1);
 $h2:map-get($Heading,h2);
@@ -33,7 +35,6 @@ $h3:map-get($Heading,h3);
 $h4:map-get($Heading,h4);
 $h5:map-get($Heading,h5);
 
-//-------------------------------------------------------//
 
 
 
@@ -57,6 +58,9 @@ $h5:map-get($Heading,h5);
     color:$Primario;
     text-decoration: none;    
 }
+
+//-----------------------------------    ESTILO     ,        FLEX       ,        GRIDS    ,    ARTISTAS         ------------------------------//  
+
 .counter{
     .Titulo__Pagina{
         @include FontStyle()

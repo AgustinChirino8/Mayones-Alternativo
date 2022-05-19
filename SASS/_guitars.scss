@@ -1,3 +1,5 @@
+//----------------------------------------------------BOX MODELING----------------------------------------------//
+
 * {
     padding: 0;
     margin: 0;
@@ -81,7 +83,7 @@ $ColVariant:nth($ListColors,5);
 
 
 
-//--------------------------------------------------SELECTORES------------------------------------------------------------------------//
+//--------------------------------------------------SELECTORES DE VARIANTES-------------------------------------------------------------//
 .Ficha{
     .Modelo {
         @include FontStyle()
@@ -114,7 +116,8 @@ $ColVariant:nth($ListColors,5);
         background-color: $Secundario;
     }
     .Elemento{
-        background-color: rgb(183, 183, 183);
+        background-color: rgba(255, 255, 255, 0.739);
         display: flex;
+        padding: 10px;
     }
 }

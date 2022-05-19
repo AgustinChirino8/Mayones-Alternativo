@@ -248,8 +248,9 @@
   background-color: #000000; }
 
 .Ficha .Elemento {
-  background-color: #b7b7b7;
-  display: flex; }
+  background-color: rgba(255, 255, 255, 0.739);
+  display: flex;
+  padding: 10px; }
 
 @media screen and (max-width: 1240px) {
   .counter {
