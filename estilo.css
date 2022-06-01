@@ -3,101 +3,121 @@
   margin: 0;
   box-sizing: border-box; }
 
-.counter .Titulo__Pagina {
-  font-family: 'Cinzel', serif;
-  font-family: 'Playfair Display', serif;
-  font-family: 'Roboto', sans-serif;
-  font-family: 'Source Code Pro', monospace;
-  text-align: center;
-  color: rgba(226, 4, 4, 0.77);
-  font-size: 50px;
-  padding: 80px; }
-
-.counter .Titulo__Redes {
-  text-align: right;
-  padding: 16px;
-  display: flex;
-  justify-content: right;
-  flex-direction: row;
-  gap: 2rem;
-  list-style: none; }
-
-.counter .Titulo__Logo {
-  text-align: center;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+#particles-js {
+  height: 100vh;
   width: 100%;
-  height: auto; }
+  position: fixed;
+  z-index: -1; }
 
-.counter .Menu {
-  text-align: right;
-  padding: 0px;
-  font-family: 'Source Code Pro', monospace;
-  font-size: 30px;
-  color: rgba(226, 4, 4, 0.77);
-  padding-bottom: 2rem; }
+.container {
+  position: relative;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.532); }
+  .container .Titulo__Logo:hover {
+    transform: scale(1.1);
+    transition: .5s; }
+  .container .Titulo__Redes {
+    text-align: right;
+    padding: 16px;
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    gap: 2rem;
+    list-style: none; }
+  .container .Titulo__Logo {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: auto; }
+  .container .Menu {
+    text-align: right;
+    padding: 0px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+    color: rgba(226, 4, 4, 0.77);
+    padding-bottom: 2rem; }
+  .container .MenuSpects {
+    display: flex;
+    justify-content: right;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    padding-right: 25px;
+    gap: 3rem;
+    list-style: none;
+    text-decoration: none; }
+  .container .MenuPrincipal {
+    text-align: center;
+    padding: 0%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 35px;
+    color: rgba(226, 4, 4, 0.77);
+    text-decoration: none; }
+  .container .MenuProducts {
+    text-align: center;
+    padding: 0%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 35px;
+    color: rgba(226, 4, 4, 0.77);
+    text-decoration: none; }
+  .container .MenuArtists {
+    text-align: center;
+    padding: 0%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 35px;
+    color: rgba(226, 4, 4, 0.77);
+    text-decoration: none; }
+  .container .MenuContact {
+    text-align: center;
+    padding: 0%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 35px;
+    color: rgba(226, 4, 4, 0.77);
+    text-decoration: none; }
 
-.counter .MenuSpects {
-  display: flex;
-  justify-content: right;
-  flex-direction: row;
-  align-items: center;
-  padding: 5px;
-  gap: 3rem;
-  list-style: none;
-  text-decoration: none; }
+.Galery {
+  position: relative;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.532);
+  /*-------------------------------------------------------RESOLUCION VIDEOS-----------------------------------------------------------  */
+  /* ----------------------------------------------------- POSICION DE VIDEOS ------------------------------------------------------------ */ }
+  .Galery .Artistas1 iframe {
+    width: 700px;
+    height: 400px; }
+  .Galery .Artistas2 iframe {
+    width: 700px;
+    height: 400px; }
+  .Galery .Artistas3 iframe {
+    width: 700px;
+    height: 400px; }
+  .Galery .Artistas1 {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    padding: 25px;
+    padding-right: 300px;
+    gap: 25rem; }
+  .Galery .Artistas2 {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    padding: 25px;
+    padding-right: 300px;
+    gap: 25rem; }
+  .Galery .Artistas3 {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    padding: 25px;
+    padding-right: 300px;
+    gap: 25rem; }
 
-.counter .MenuPrincipal {
-  text-align: center;
-  padding: 0%;
-  font-family: 'Source Code Pro', monospace;
-  font-size: 35px;
-  color: rgba(226, 4, 4, 0.77);
-  text-decoration: none; }
-
-.counter .MenuProducts {
-  text-align: center;
-  padding: 0%;
-  font-family: 'Source Code Pro', monospace;
-  font-size: 35px;
-  color: rgba(226, 4, 4, 0.77);
-  text-decoration: none; }
-
-.counter .MenuArtists {
-  text-align: center;
-  padding: 0%;
-  font-family: 'Source Code Pro', monospace;
-  font-size: 35px;
-  color: rgba(226, 4, 4, 0.77);
-  text-decoration: none; }
-
-.counter .MenuContact {
-  text-align: center;
-  padding: 0%;
-  font-family: 'Source Code Pro', monospace;
-  font-size: 35px;
-  color: rgba(226, 4, 4, 0.77);
-  text-decoration: none; }
-
-.Galery .Artistas1 {
-  display: flex;
-  justify-content: space-evenly;
-  text-align: center;
-  padding: 10px;
-  padding-right: 35px;
-  padding-top: 30px;
-  gap: 4rem; }
-
-.Galery .Artistas2, .Galery .Artistas3 {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 10px;
-  padding-top: 50px;
-  padding-left: 10px;
-  padding-right: 90px;
-  gap: 10rem; }
+.Titulo__Logo:hover {
+  transform: scale(1.1);
+  transition: .5s; }
 
 .PieDePagina {
   padding-bottom: 200px; }
@@ -117,6 +137,12 @@
     padding: 10px;
     color: #000000; }
 
+#particles-js {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1; }
+
 .Article .container {
   border-radius: 5px;
   background: #40211a;
@@ -125,7 +151,10 @@
   padding-top: 20px;
   padding: 100px;
   color: white;
-  font-family: 'Source Code Pro', monospace; }
+  font-family: 'Source Code Pro', monospace;
+  position: relative;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.532); }
 
 .Article .Contact {
   font-family: 'Source Code Pro', monospace;
@@ -244,13 +273,14 @@
 
 .Ficha .ElementosTablas {
   display: grid;
-  grid-template-columns: 50rem;
+  grid-template-columns: 40rem;
   background-color: #000000; }
 
 .Ficha .Elemento {
   background-color: rgba(255, 255, 255, 0.739);
   display: flex;
-  padding: 10px; }
+  padding: 10px;
+  justify-content: left; }
 
 @media screen and (max-width: 1240px) {
   .counter {
@@ -266,32 +296,42 @@
       color: rgba(226, 4, 4, 0.77);
       padding: 10px; }
     .counter .Menu {
-      text-align: left;
+      text-align: center;
       padding: 0px;
       font-family: 'Source Code Pro', monospace;
-      font-size: 10px;
-      color: #BFACAA; }
+      font-size: 10px; }
       .counter .Menu .MenuSpects {
-        padding: 0px;
+        padding: 25px;
         list-style: none;
         text-decoration: none;
         text-align: center; }
-    .counter .Ficha .Tablas {
-      display: flex;
-      color: white;
-      grid-template-columns: 4px;
-      font-size: 30px;
-      padding: 1px;
-      border-style: none;
-      flex-direction: column; }
-    .counter .Ficha .ElementosTablas {
+    .counter .Ficha .Modelo {
       display: flex;
       flex-direction: column;
+      justify-content: center; }
+    .counter .Ficha .Variante1 img {
+      display: grid;
+      padding-left: 45px; }
+    .counter .Ficha .Tablas {
+      display: grid;
+      color: #850101;
+      font-family: 'Cinzel', serif;
+      font-family: 'Playfair Display', serif;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 30px;
+      grid-template-columns: 4px;
+      padding: 3%;
+      border-style: none;
+      justify-content: left; }
+    .counter .Ficha .ElementosTablas {
+      display: grid;
+      grid-template-columns: 50rem;
       background-color: #000000; }
     .counter .Ficha .Elemento {
-      background-color: grey;
+      background-color: rgba(255, 255, 255, 0.739);
       display: flex;
-      flex-direction: column; }
+      padding: 10px; }
     .counter .Ficha .Variante1 {
       display: flex;
       flex-direction: column;
@@ -303,14 +343,159 @@
     .counter .Ficha .Variante3 {
       display: flex;
       flex-direction: column;
-      gap: 15px; }
-    .counter .Galery .Artistas1 {
-      display: flex;
-      flex-direction: column; }
-    .counter .Galery .Artistas2, .counter .Galery .Artistas3 {
-      display: flex;
-      flex-direction: column; }
-    .counter .Galery .Artistas3 {
+      gap: 15px; } }
+
+@media screen and (max-width: 1480px) {
+  .Menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 10px; }
+    .Menu .MenuSpects {
+      padding: 0px;
+      list-style: none;
+      text-decoration: none;
+      text-align: center; }
+  .Ficha .Modelo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .Ficha .Variante1 img {
+    display: grid;
+    padding-left: 45px; }
+  .Ficha .Tablas {
+    display: grid;
+    color: #850101;
+    font-family: 'Cinzel', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+    grid-template-columns: 4px;
+    padding: 3%;
+    border-style: none;
+    justify-content: left; }
+  .Ficha .ElementosTablas {
+    display: grid;
+    grid-template-columns: 50rem;
+    background-color: #000000; }
+  .Ficha .Elemento {
+    background-color: rgba(255, 255, 255, 0.739);
+    display: flex;
+    padding: 10px; }
+  .Ficha .Variante1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; }
+  .Ficha .Variante2 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; }
+  .Ficha .Variante3 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; }
+  .Galery .Artistas1 {
+    display: grid;
+    grid-template-columns: 100px;
+    padding-right: 550px;
+    gap: 6px !important; }
+  .Galery .Artistas2 {
+    display: grid;
+    grid-template-columns: 100px;
+    padding-right: 550px;
+    gap: 6px !important; }
+  .Galery .Artistas3 {
+    display: grid;
+    grid-template-columns: 100px;
+    padding-right: 550px;
+    gap: 6px !important; } }
+
+@media screen and (max-width: 840px) {
+  .counter .MenuSpects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 15px;
+    box-sizing: border-box; }
+  .counter .Ficha {
+    box-sizing: border-box; }
+    .counter .Ficha .Modelo {
       display: flex;
       flex-direction: column;
-      size: 50%; } }
+      justify-content: center;
+      box-sizing: border-box; }
+    .counter .Ficha .Variante1 img {
+      display: grid;
+      box-sizing: border-box;
+      justify-content: center;
+      gap: 2px;
+      padding: 1px; }
+    .counter .Ficha .Tablas {
+      color: #850101;
+      font-family: 'Cinzel', serif;
+      font-family: 'Playfair Display', serif;
+      font-family: 'Roboto', sans-serif;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 20px;
+      grid-template-columns: 4px;
+      border-style: none;
+      justify-content: left;
+      gap: 2rem;
+      text-align: left; }
+    .counter .Ficha .ElementosTablas {
+      display: grid;
+      grid-template-columns: 50rem;
+      background-color: #000000;
+      box-sizing: border-box;
+      justify-content: left; }
+    .counter .Ficha .Elemento {
+      background-color: rgba(255, 255, 255, 0.739);
+      display: flex;
+      padding: 5px;
+      padding-left: 10px;
+      box-sizing: border-box; }
+    .counter .Ficha .Variante1 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      box-sizing: border-box; }
+    .counter .Ficha .Variante2 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      box-sizing: border-box; }
+    .counter .Ficha .Variante3 {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      box-sizing: border-box; }
+  .counter .Galery .Artistas1 {
+    width: max-content;
+    padding: 10px;
+    margin-left: 38px;
+    box-sizing: border-box; }
+  .counter .Galery .Artistas2 {
+    width: max-content;
+    padding: 10px;
+    margin-left: 38px;
+    box-sizing: border-box; }
+  .counter .Galery .Artistas3 {
+    width: max-content;
+    padding: 10px;
+    margin-left: 38px;
+    box-sizing: border-box;
+    padding-bottom: 35px; }
+  .counter .PieDePagina {
+    padding: 10px; } }
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 2px; }

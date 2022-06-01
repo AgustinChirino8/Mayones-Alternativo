@@ -5,13 +5,38 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+#particles-js{
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+    z-index: -1;
+}
+
+.contenedor{
+    position: relative;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0.532);
+}
+
+nav{
+    position: relative;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 0.532);
+    
+}
+article{
+    position: relative;
+    z-index: 99;
+}
 .Imagenes{
     display: flex;
     justify-content: center;
-    gap: 15rem;
+    gap: 2rem;
     padding-top:150px;
 }
 
 .Parrafo{
     padding-top: 80px;
 }
+

@@ -34,8 +34,10 @@ $h5:map-get($Heading,h5);
     gap: 15px;
 }
 @mixin Galery {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 100px;
+    padding-right: 550px;
+    gap:6px !important;
 }
 
 
@@ -58,37 +60,49 @@ $h5:map-get($Heading,h5);
           padding: 10px;
        }
        .Menu{
-          text-align: left;
+          text-align: center;
           padding: 0px;
           font-family: 'Source Code Pro', monospace;
           font-size: 10px;
-          color:#BFACAA ;
           .MenuSpects{
-               padding: 0px;
+               padding: 25px;
                list-style: none;
                text-decoration: none;  
                text-align: center;  
            } 
        }
        .Ficha{
+           .Modelo{
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+           }
+            .Variante1 img{
+                display: grid;
+                padding-left: 45px;
+            }
             .Tablas{
-                display: flex;
-                color:white;
-                grid-template-columns: 4px;
+                display: grid;
+                color:$ColVariant;
+                font-family: 'Cinzel', serif;
+                font-family: 'Playfair Display', serif;
+                font-family: 'Roboto', sans-serif;
+                font-family: 'Source Code Pro', monospace;
                 font-size: 30px;
-                padding: 1px;
+                grid-template-columns: 4px;
+                padding: 3%;
                 border-style: none;
-                flex-direction: column;
+                justify-content: left;
            }
             .ElementosTablas{
-                display: flex;
-                flex-direction: column;
-                background-color: $Dark;
+                display: grid;
+                grid-template-columns: 50rem;
+                background-color: $Secundario;
            }
             .Elemento{
-                background-color: grey;
+                background-color: rgba(255, 255, 255, 0.739);
                 display: flex;
-                flex-direction: column;
+                padding: 10px;
            }
             .Variante1{
                 @include Variant();
@@ -100,18 +114,176 @@ $h5:map-get($Heading,h5);
                 @include Variant();
            }
        }
-       .Galery{
-            
-            .Artistas1{
-                @include Galery();
-           }   
-            .Artistas2{
-                @include Galery();
-           }
-            .Artistas3{
-                @include Galery();
-               size: 50%;
-           }
-       }
    }    
+}
+@media screen and (max-width:1480px){
+     .Menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0px;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 10px;
+        .MenuSpects{
+            padding: 0px;
+            list-style: none;
+            text-decoration: none;  
+            text-align: center;  
+        } 
+     }
+     .Ficha{
+        .Modelo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+         .Variante1 img{
+             display: grid;
+             padding-left: 45px;
+         }
+         .Tablas{
+             display: grid;
+             color:$ColVariant;
+             font-family: 'Cinzel', serif;
+             font-family: 'Playfair Display', serif;
+             font-family: 'Roboto', sans-serif;
+             font-family: 'Source Code Pro', monospace;
+             font-size: 30px;
+             grid-template-columns: 4px;
+             padding: 3%;
+             border-style: none;
+             justify-content: left;
+        }
+         .ElementosTablas{
+             display: grid;
+             grid-template-columns: 50rem;
+             background-color: $Secundario;
+        }
+         .Elemento{
+             background-color: rgba(255, 255, 255, 0.739);
+             display: flex;
+             padding: 10px;
+        }
+         .Variante1{
+             @include Variant();
+        }
+         .Variante2{
+             @include Variant();
+        }
+         .Variante3{
+             @include Variant();
+        }
+    }
+    .Galery{
+        .Artistas1{
+            @include Galery();
+       }   
+        .Artistas2{
+            @include Galery();
+       }
+        .Artistas3{
+            @include Galery();
+       }
+    } 
+}
+@media screen and (max-width:840px){
+    .counter{
+        .MenuSpects{
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            padding-left:20px;
+            padding-right: 20px;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        .Ficha{
+            box-sizing: border-box;
+            .Modelo{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                box-sizing: border-box;
+            }
+             .Variante1 img{
+                 display: grid;
+                 box-sizing: border-box;
+                 justify-content: center;
+                 gap: 2px;
+                 padding: 1px;
+             }
+             .Tablas{
+                 color:$ColVariant;
+                 font-family: 'Cinzel', serif;
+                 font-family: 'Playfair Display', serif;
+                 font-family: 'Roboto', sans-serif;
+                 font-family: 'Source Code Pro', monospace;
+                 font-size: 20px;
+                 grid-template-columns: 4px;
+                 border-style: none;
+                 justify-content: left;
+                 gap: 2rem;
+                 text-align: left;                
+            }
+             .ElementosTablas{
+                 display: grid;
+                 grid-template-columns: 50rem;
+                 background-color: $Secundario;
+                 box-sizing: border-box;
+                 justify-content: left;
+            }
+             .Elemento{
+                background-color: rgba(255, 255, 255, 0.739);
+                display: flex;
+                padding: 5px;
+                padding-left: 10px;
+                box-sizing: border-box
+            }
+             .Variante1{
+                @include Variant();
+                box-sizing: border-box;
+            }
+             .Variante2{
+                @include Variant();
+                box-sizing: border-box;
+            }
+             .Variante3{
+                @include Variant();
+                box-sizing: border-box;
+            }
+        }
+        .Galery{
+            .Artistas1{
+                width:max-content;
+                padding: 10px;
+                margin-left: 38px;
+                box-sizing: border-box;
+            }
+            .Artistas2{
+                width:max-content;
+                padding: 10px;
+                margin-left: 38px;
+                box-sizing: border-box;
+            }
+            .Artistas3{
+                width:max-content;
+                padding: 10px;
+                margin-left: 38px;
+                box-sizing: border-box;
+                padding-bottom: 35px;
+            }
+        }
+        .PieDePagina{
+            padding: 10px;
+        }
+    }
+}
+
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 2px;
 }
